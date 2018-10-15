@@ -1,0 +1,24 @@
+body, pre {
+  margin: 0;
+}
+
+pre {
+  padding: 10px;
+  font-size: 14px;
+}
+
+#app {
+  .spinner {
+    display: none;
+  }
+
+  &.loading {
+    .spinner {
+      display: flex;
+    }
+
+    pre {
+      display: none;
+    }
+  }
+}

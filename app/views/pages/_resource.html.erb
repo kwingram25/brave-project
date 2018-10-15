@@ -1,0 +1,16 @@
+<%= render partial: 'spinner' %>
+<pre>
+<% if !resource %>
+Data not found
+<% else
+     prettify_resource(resource).map do |line|
+       fragments = extract_fragments(line)
+       if !fragments.nil?
+         pre, url, type, id, post = fragments %>
+<%= pre %><%= link_to url, root_path(:id => id, :type => type), remote: true %><%= post %>
+    <% else %>
+<%= line.gsub(' ', "\s") %>
+    <% end
+    end
+  end %>
+</pre>
