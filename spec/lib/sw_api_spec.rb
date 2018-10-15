@@ -47,7 +47,7 @@ describe "sw_api wrapper" do
 
       local = c.get_from_db(id)
 
-      expect(c.stripped_json(local)).to eq(c.stripped_json(remote))
+      expect(stripped_json(local)).to eq(stripped_json(remote))
     end
   end
 end

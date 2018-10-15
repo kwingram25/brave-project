@@ -10,10 +10,6 @@ ARRAY_TYPES = {
   "vehicles" => "Vehicle"
 }
 
-def stripped_json(record)
-  record.as_json.except('id', 'created_at', 'updated_at')
-end
-
 class Resource
   class << self
     attr_reader :path, :model_name

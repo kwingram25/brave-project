@@ -1,3 +1,4 @@
+require './lib/sw_api_helpers'
 require './lib/sw_api_resource'
 
 module SWApi
