@@ -3,6 +3,7 @@
 JSON viewer and PostgreSQL-backed caching system for [SWApi](https://swapi.co) resources
 
 ## Development
+Install PostgreSQL locally
 ```
 bundle install
 rake create:db migrate:db
