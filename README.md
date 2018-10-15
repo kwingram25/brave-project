@@ -4,7 +4,7 @@
 ```
 bundle install
 rake create:db migrate:db
-rails start
+rails s
 # visit http://localhost:3000
 ```
 
