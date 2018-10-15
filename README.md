@@ -1,5 +1,7 @@
 # Brave Coding Project (SWApi Viewer)
 
+JSON viewer and PostgreSQL-backed caching system for [SWApi](https://swapi.co) resources
+
 ## Development
 ```
 bundle install
