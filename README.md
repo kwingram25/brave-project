@@ -21,6 +21,6 @@ rspec spec
 docker-compose build
 docker-compose up
 # In another terminal:
-docker-compose run web rake migrate:db RAILS_ENV=production
+docker-compose run web rails create:db migrate:db assets:precompile RAILS_ENV=production
 # visit http://localhost:3000
 ```
